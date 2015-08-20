@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "testing nginx config with geoip module",
   "scripts": {
+    "generate-keys": "bash generate-keys.sh",
     "start": "node index"
   },
   "author": "",
