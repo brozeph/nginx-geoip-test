@@ -1,0 +1,13 @@
+{
+  "name": "nginx-geoip-test",
+  "version": "1.0.0",
+  "description": "testing nginx config with geoip module",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^9.0.3"
+  }
+}
