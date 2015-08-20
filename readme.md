@@ -2,15 +2,20 @@
 
 ## Getting Started
 
-### Nginx Setup
+### Server Setup
 
-Follow the instructions found in `optimize-app-server.md`.
+Create an Ubuntu server and follow the instructions found in `optimize-app-server.md`.
 
-Copy the `nginx.conf` from this folder to `/etc/nginx`
-
-### Node app
+### Node App
 
 ```bash
+mkdir ~/source
+cd ~/source
+git clone https://github.com/brozeph/nginx-geoip-test
+cd nginx-geoip-test
+npm install
 npm run generate-keys
-npm start
+sudo cp nginx.conf /etc/nginx
+sudo cp nginx-geoip-test.conf /etc/init
+sudo service nginx-geoip-test start
 ```
