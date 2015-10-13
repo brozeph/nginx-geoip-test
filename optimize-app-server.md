@@ -125,7 +125,7 @@ sudo crontab -e
 Add the following entry (update at 1:45am each Wednesday each month):
 
 ```bash
-45 1 * * 3 /usr/local/bin/geoipupdate
+45 1 * * 3 /usr/bin/geoipupdate
 ```
 
 ### Step 4. Run geoipupdate
